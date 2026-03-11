@@ -40,8 +40,8 @@
     "lint": "npm run build && ESLINT_USE_FLAT_CONFIG=false eslint src --ext .ts --config ./build/node.js",
     "prepack": "npm run build",
     "test": "npm run test:node && npm run test:bun",
-    "test:bun": "bun test",
-    "test:node": "node --test",
+    "test:bun": "npm run build && bun test",
+    "test:node": "npm run build && node --test",
     "typecheck": "tsc --project ./tsconfig.json --noEmit"
   },
   "peerDependencies": {
