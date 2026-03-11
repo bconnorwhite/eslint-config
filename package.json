@@ -39,7 +39,9 @@
     "build": "tsc --project ./tsconfig.json --incremental",
     "lint": "npm run build && ESLINT_USE_FLAT_CONFIG=false eslint src --ext .ts --config ./build/node.js",
     "prepack": "npm run build",
-    "test": "node --test",
+    "test": "npm run test:node && npm run test:bun",
+    "test:bun": "bun test",
+    "test:node": "node --test",
     "typecheck": "tsc --project ./tsconfig.json --noEmit"
   },
   "peerDependencies": {
