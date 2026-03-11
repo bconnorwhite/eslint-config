@@ -258,12 +258,7 @@ const formatting: Linter.RulesRecord = {
   "linebreak-style": "error",
   "lines-around-comment": "off",
   "lines-between-class-members": ["warn", "never"],
-  "max-len": ["warn", {
-    code: 120,
-    ignoreUrls: true,
-    ignoreStrings: true,
-    ignoreTemplateLiterals: true
-  }],
+  "max-len": "off",
   "max-statements-per-line": "error",
   "multiline-ternary": "off",
   "new-parens": "error",
