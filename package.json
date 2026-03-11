@@ -39,7 +39,8 @@
     "build": "tsc --project ./tsconfig.json --incremental",
     "lint": "npm run build && ESLINT_USE_FLAT_CONFIG=false eslint src --ext .ts --config ./build/node.js",
     "prepack": "npm run build",
-    "test": "node --test"
+    "test": "node --test",
+    "typecheck": "tsc --project ./tsconfig.json --noEmit"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^8.56.1",
